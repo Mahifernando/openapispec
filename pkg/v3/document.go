@@ -1,6 +1,6 @@
 package v3
 
-type Schema struct {
+type Document struct {
 	OpenApi    string     `json:"openapi" yaml:"openapi"` // Required
 	Info       *Info      `json:"info" yaml:"info"`       // Required
 	Servers    []*Server  `json:"servers,omitempty" yaml:"servers,omitempty"`
