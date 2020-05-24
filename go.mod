@@ -1,3 +1,3 @@
-module github.com/mahifernando/openapispec
+module github.com/serialberry/openapispec
 
 go 1.14
