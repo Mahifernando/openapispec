@@ -14,6 +14,6 @@ However, please note at the moment this is an experimental repository.
 
 Project structure is based on [golang-standards](https://github.com/golang-standards/project-layout) reference docs.
 
-### pkg
+### [pkg](https://github.com/Mahifernando/openapispec/tree/master/pkg)
 
 Provides data structures for [Open API specification version 3.0.3](http://spec.openapis.org/oas/v3.0.3)
