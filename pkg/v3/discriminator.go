@@ -1,5 +1,6 @@
 package v3
 
 type Discriminator struct {
-	todo string
+	PropertyName string            `json:"propertyName" yaml:"propertyName"` // Required
+	Mapping      map[string]string `json:"mapping,omitempty" yaml:"mapping,omitempty"`
 }
