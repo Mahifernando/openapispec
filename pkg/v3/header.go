@@ -8,16 +8,16 @@ type Header struct {
 
 // Represents 'Header Object' as defined by the http://spec.openapis.org/oas/v3.0.3#header-object
 type HeaderNode struct {
-	Description     string              `json:"description,omitempty" yaml:"description,omitempty"`
-	Required        bool                `json:"required,omitempty" yaml:"required,omitempty"`
-	Deprecated      bool                `json:"deprecated,omitempty" yaml:"deprecated,omitempty"`
-	AllowEmptyValue bool                `json:"allowEmptyValue,omitempty" yaml:"allowEmptyValue,omitempty"`
-	Style           string              `json:"style,omitempty" yaml:"style,omitempty"`
-	Explode         bool                `json:"explode,omitempty" yaml:"explode,omitempty"`
-	AllowReserved   bool                `json:"allowReserved,omitempty" yaml:"allowReserved,omitempty"`
-	Schema          map[string]*Schema  `json:"schema,omitempty" yaml:"schema,omitempty"`
-	Content         *MediaType          `json:"content,omitempty" yaml:"content,omitempty"`
-	Example         interface{}         `json:"example,omitempty" yaml:"example,omitempty"`
-	Examples        map[string]*Example `json:"examples,omitempty" yaml:"examples,omitempty"`
-	Extensions      *Extension          `json:"-" yaml:"-"` // The field name MUST begin with x-, for example, x-internal-id.
+	Description     string                `json:"description,omitempty" yaml:"description,omitempty"`
+	Required        bool                  `json:"required,omitempty" yaml:"required,omitempty"`
+	Deprecated      bool                  `json:"deprecated,omitempty" yaml:"deprecated,omitempty"`
+	AllowEmptyValue bool                  `json:"allowEmptyValue,omitempty" yaml:"allowEmptyValue,omitempty"`
+	Style           string                `json:"style,omitempty" yaml:"style,omitempty"`
+	Explode         bool                  `json:"explode,omitempty" yaml:"explode,omitempty"`
+	AllowReserved   bool                  `json:"allowReserved,omitempty" yaml:"allowReserved,omitempty"`
+	Schema          *Schema               `json:"schema,omitempty" yaml:"schema,omitempty"`
+	Content         map[string]*MediaType `json:"content,omitempty" yaml:"content,omitempty"`
+	Example         interface{}           `json:"example,omitempty" yaml:"example,omitempty"`
+	Examples        map[string]*Example   `json:"examples,omitempty" yaml:"examples,omitempty"`
+	Extensions      *Extension            `json:"-" yaml:"-"` // The field name MUST begin with x-, for example, x-internal-id.
 }
